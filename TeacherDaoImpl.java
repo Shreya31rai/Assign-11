@@ -6,6 +6,8 @@ import org.antwalk.model.Teacher;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
+
+@Component
 public class TeacherDaoImpl extends JdbcDaoSupport implements TeacherDao{
 	public void create(String name, String address) {
 		  
