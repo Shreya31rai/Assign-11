@@ -12,17 +12,17 @@ public class Test {
 
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-		EmployeeDao emp =(EmployeeDao)context.getBean("employeeDaoImpl");
+	   TeacherDao tr =(TeacherDao)context.getBean("teacherDaoImpl");
 		System.out.println("Adding record");
 		emp.create("shreya",23,5000000l );
 		
 		
-		List<Employee>employees =emp.listEmployees();
-		for(Employee emp1:employees) {
-		System.out.println("id  "+emp1.getEmpid());
-		System.out.println("title  "+emp1.getName());
-		System.out.println("Author "+emp1.getAge());
-		System.out.println("Price"+emp1.getSalary());
+		List<Teacher>Teachers =tr.listTeachers();
+		for(Teacher tr1:Teachers) {
+		System.out.println("id  "+tr1.getEmpid());
+		System.out.println("Name "+tr1.getName());
+		System.out.println("Address "+tr1.getAddress());
+
 		
 	}
 	
