@@ -12,7 +12,7 @@ public class TeacherMapper implements RowMapper {
 	  teacher.setId(rs.getInt("id"));  
 	  teacher.setName(rs.getString("name"));  
 	  teacher.setAddress(rs.getString("address"));  
-	 // employee.setSalary(rs.getLong("salary"));  
+	
 	  return teacher;  
 	 }  
 }
